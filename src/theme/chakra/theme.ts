@@ -3,23 +3,20 @@ import { extendTheme, withDefaultColorScheme } from "@chakra-ui/react";
 
 const colors = {
   black: {
-    "950": "#000F01",
-    "900": "#002704",
-    "800": "#084114",
-    "700": "#185F28",
-    "600": "#2A813F",
-    "500": "#3EA359",
-    "400": "#55C474",
-    "300": "#6DE28F",
-    "200": "#9FF7B7",
     "100": "#1F1F1F",
+    "200": "rgba(72, 72, 72, 0.5)",
+    "300": "#1A1A1A",
+    "400": "#ffffff0d"
   },
- 
+  grayNew: {
+    '100': '#717171',
+    '200': '#C9C9C9'
+  }
 };
 const typographyObj = {
   fonts: {
     body: `'Poppins', monospace`,
-    heading: `'Roboto', monospace`,
+    heading: `'Poppins', monospace`,
   },
 };
 

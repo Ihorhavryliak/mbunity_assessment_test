@@ -8,11 +8,18 @@ type IconType = {
   title?: string;
   type: IconName;
   color?: string;
-  opacity?: string
+  opacity?: string;
 };
 
 const Icon = (props: IconType) => {
-  const { w = 16, h = 16, title = "React", type, color = "#000", opacity='1' } = props;
+  const {
+    w = 16,
+    h = 16,
+    title = "React",
+    type,
+    color = "#000",
+    opacity = "1",
+  } = props;
   return (
     <SVG
       color={color}
