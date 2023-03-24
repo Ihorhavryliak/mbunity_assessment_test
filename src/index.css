@@ -1,3 +1,4 @@
+/* connect fonts */
 @font-face {
   font-family: "Roboto";
   src: local("Roboto"),
@@ -8,11 +9,24 @@
 }
 
 @font-face {
-  font-family: "Inter";
-  src: local("Inter"),
+  font-family: "Inter-800";
+  src: local("Inter-800"),
     url("./assets/fonts/Inter/Inter-ExtraBold.ttf") format("opentype");
   font-style: normal;
   font-weight: 800;
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"),
+    url("./assets/fonts/Poppins/Poppins-Regular.ttf") format("opentype");
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+/* styles */
+li .active {
+  font-weight: 600;
+}
