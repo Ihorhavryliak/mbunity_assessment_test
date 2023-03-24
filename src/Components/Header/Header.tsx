@@ -17,17 +17,17 @@ const Header = () => {
     <Flex as="header" justifyContent="center" mt="40px">
       <Flex maxWidth="1240px" w="100%" justifyContent="space-between">
         {/* logo */}
-  
-          <Box
-            cursor="pointer"
-            fontFamily="Inter-800"
-            fontWeight="800"
-            fontSize="24px"
-            lineHeight="29px"
-          >
-               <Link to="/">   Logo Here       </Link>
-          </Box>
- 
+
+        <Box
+          cursor="pointer"
+          fontFamily="Inter-800"
+          fontWeight="800"
+          fontSize="24px"
+          lineHeight="29px"
+        >
+          <Link to="/"> Logo Here </Link>
+        </Box>
+
         {/* right side */}
         <Flex alignItems="center">
           {/*  nav menu */}
@@ -39,7 +39,7 @@ const Header = () => {
               color="black.100"
             >
               <ListItem lineHeight="19px" cursor="pointer">
-          <NavLink to='/'>    Home</NavLink>  
+                <NavLink to="/"> Home</NavLink>
               </ListItem>
               {/* drop down */}
               <ListItem color="black.100" lineHeight="19px">
@@ -60,17 +60,11 @@ const Header = () => {
                   </MenuList>
                 </Menu>
               </ListItem>
+              <ListItem lineHeight="19px">Blog</ListItem>
+              <ListItem lineHeight="19px">Shop</ListItem>
+              <ListItem lineHeight="19px">About</ListItem>
               <ListItem lineHeight="19px" cursor="pointer">
-                Blog
-              </ListItem>
-              <ListItem lineHeight="19px" cursor="pointer">
-                Shop
-              </ListItem>
-              <ListItem lineHeight="19px" cursor="pointer">
-                About
-              </ListItem>
-              <ListItem lineHeight="19px" cursor="pointer">
-              <NavLink to='/contact'>   Contact </NavLink>
+                <NavLink to="/contact"> Contact </NavLink>
               </ListItem>
             </List>
           </Flex>
@@ -82,7 +76,6 @@ const Header = () => {
               border="1px"
               borderRadius="50px"
               opacity="0.75"
-              cursor="pointer"
             >
               <Image src={userImg} w="16px" h="18" opacity="1" />
             </Box>
@@ -92,7 +85,6 @@ const Header = () => {
               border="1px"
               borderRadius="50px"
               opacity="0.75"
-              cursor="pointer"
             >
               <Icon type="cart" w={18} h={19} title="arrow" opacity="1" />
             </Box>
