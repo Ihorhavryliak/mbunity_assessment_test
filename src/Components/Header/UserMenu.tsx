@@ -21,7 +21,7 @@ export const UserMenu = () => {
         borderRadius="50px"
         borderColor="black.700"
       >
-        <Icon type="cart" w={18} h={19} title="arrow" />
+    {/*     <Icon type="cart" w={18} h={19} title="arrow" /> */}
       </Box>
     </Flex>
   );

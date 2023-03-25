@@ -4,9 +4,7 @@
 
 This is a Mbunity Development technical assessment for potential React Frontend Engineer.
 
-chakra
-u-18
-redux
+
 
 The purpose of this exercise is to assess your:
 

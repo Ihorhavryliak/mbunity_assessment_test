@@ -160,7 +160,7 @@ export const NavMenuMobile = (props: NavMenuMobileType) => {
                   borderRadius="50px"
                   borderColor="white.500"
                 >
-                  <Icon type="cart" w={18} h={19} title="cart" color="white" />
+                 {/*  <Icon type="cart" w={18} h={19} title="cart" color="white" /> */}
                 </Box>
               </Flex>
             </Box>
