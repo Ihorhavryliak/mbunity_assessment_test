@@ -1,6 +1,6 @@
 import { extendTheme, withDefaultColorScheme } from "@chakra-ui/react";
 import { ButtonTheme } from "./_Button";
-
+//create own colors styles
 const colors = {
   black: {
     "100": "#1F1F1F",
@@ -29,11 +29,12 @@ const typographyObj = {
     heading: `'Poppins', monospace`,
   },
 };
-
+//create own button styles
 const components = { Button: ButtonTheme };
-
+//create own typography styles
 const typography = { ...typographyObj };
 
+//connect styles
 const theme = extendTheme({
   components,
   colors,

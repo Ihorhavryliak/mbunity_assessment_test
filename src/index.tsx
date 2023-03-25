@@ -13,6 +13,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    {/* connect chakra */}
       <ChakraProvider theme={theme}>
         <App />
       </ChakraProvider>
