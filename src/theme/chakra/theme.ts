@@ -22,24 +22,12 @@ const typographyObj = {
 };
 
 const components = { Button: ButtonTheme };
-const sizes = {
-  // general
-  // container
-  "container-sm": "640px",
-  "container-md": "768px",
-  "container-lg": "1024px",
-  "container-xl": "1280px",
-  "container-2xl": "1536px",
-  // full
-  "full-x": "100vw",
-  "full-y": "100vh",
-};
+
 const typography = { ...typographyObj };
 
 const theme = extendTheme({
   components,
   colors,
-  sizes,
   ...typography,
 });
 

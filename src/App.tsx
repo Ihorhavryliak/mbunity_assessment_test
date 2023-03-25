@@ -2,6 +2,8 @@ import Header from "./Components/Header/Header";
 import Routers from "./views/Routers/Routers";
 import Footer from "./Components/Footer/Footer";
 import { Flex } from "@chakra-ui/react";
+import "./styles/index.css";
+import "./styles/fonts.css";
 import "./utils/118n";
 
 function App() {
@@ -9,7 +11,7 @@ function App() {
     <>
       <Header />
       <Flex as="header" justifyContent="center">
-        <Flex maxWidth="1240px" w="100%">
+        <Flex maxWidth="1240px" w="100%" justifyContent='center'>
           <Routers />
         </Flex>
       </Flex>

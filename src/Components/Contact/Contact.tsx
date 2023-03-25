@@ -57,7 +57,15 @@ const Contact = () => {
         </Text>
       </Box>
       {/* box contact */}
-      <Flex py="10px" ps="10px" pe="50px" gap="50px" bg="white" position='relative' overflow='hidden'>
+      <Flex
+        py="10px"
+        ps="10px"
+        pe="50px"
+        gap="50px"
+        bg="white"
+        position="relative"
+        overflow="hidden"
+      >
         {/* contact information */}
         <Box
           maxWidth="491px"
@@ -106,7 +114,7 @@ const Contact = () => {
               </Box>
             </Flex>
             {/* map */}
-            <Flex alignItems="center" gap="25px" mt="50px">
+            <Flex gap="25px" mt="50px">
               <Box as="span" p="2px">
                 <Icon type="map" w={20} h={20} />
               </Box>
@@ -184,7 +192,7 @@ const Contact = () => {
         {/* form */}
         <Box w="100%">
           <form onSubmit={handleSubmit(onSubmit)}>
-            <FormControl mt="60px" fontFamily="Poppins-500" w="100%">
+            <FormControl mt="50px" fontFamily="Poppins-500" w="100%">
               {/*   the first line */}
               <Flex justifyContent="space-between" gap="39px" mb="45px">
                 {/*  first name */}
@@ -193,6 +201,7 @@ const Contact = () => {
                     fontSize="12px"
                     lineHeight="20px"
                     color="grayNew.300"
+                    mb="0"
                     className={isFocused === "firstName" ? "color-active" : ""}
                   >
                     First Name
@@ -208,6 +217,7 @@ const Contact = () => {
                 {/*   last name */}
                 <Box w="100%">
                   <FormLabel
+                    mb="0"
                     fontSize="12px"
                     lineHeight="20px"
                     color="grayNew.300"
@@ -229,6 +239,7 @@ const Contact = () => {
                 {/*  Email */}
                 <Box w="100%">
                   <FormLabel
+                    mb="0"
                     fontSize="12px"
                     lineHeight="20px"
                     color="grayNew.300"
@@ -247,6 +258,7 @@ const Contact = () => {
                 {/*   Phone Number */}
                 <Box w="100%">
                   <FormLabel
+                    mb="0"
                     fontSize="12px"
                     lineHeight="20px"
                     color="grayNew.300"
@@ -359,6 +371,7 @@ const Contact = () => {
                 {/*  Message */}
                 <Box w="100%">
                   <FormLabel
+                    mb="0"
                     fontSize="12px"
                     lineHeight="20px"
                     color="grayNew.300"
@@ -368,7 +381,7 @@ const Contact = () => {
                   </FormLabel>
                   <input
                     placeholder="Write your message.."
-                    className="form-input"
+                    className="form-input form-input-message"
                     type="text"
                     {...register("message")}
                     onFocus={() => setIsFocused("message")}
@@ -387,14 +400,11 @@ const Contact = () => {
         </Box>
         {/* letter Img */}
         <Image
-        src={letterImg}
-    
-              position="absolute"
-              right="130px"
-              bottom="-79px"
-      
-            ></Image>
-      
+          src={letterImg}
+          position="absolute"
+          right="130px"
+          bottom="-50px"
+        ></Image>
       </Flex>
     </Box>
   );
