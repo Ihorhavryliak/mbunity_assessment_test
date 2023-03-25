@@ -1,7 +1,8 @@
 import { Heading } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 
 export const LogoHeader = () => {
-  
+  const { t } = useTranslation();
   return (
     <Heading
       as="h2"
@@ -11,7 +12,7 @@ export const LogoHeader = () => {
       color="white"
       textAlign="center"
     >
-      Logo Here
+      {t("logo")}
     </Heading>
   );
 };

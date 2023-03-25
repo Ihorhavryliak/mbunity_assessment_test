@@ -2,7 +2,6 @@ import { Flex } from "@chakra-ui/react";
 import Icon from "../Icon/Icon";
 
 export const SocialMediaIcons = () => {
-  
   return (
     <Flex
       justifyContent={{

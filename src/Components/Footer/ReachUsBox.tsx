@@ -1,8 +1,9 @@
 import { Box, Flex, Heading } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 import Icon from "../Icon/Icon";
 
 export const ReachUsBox = () => {
-
+  const { t } = useTranslation();
   return (
     <Box
       me={{ base: "0", lg: "48px", xl: "48px", "2xl": "48px" }}
@@ -28,7 +29,7 @@ export const ReachUsBox = () => {
           "2xl": "20px",
         }}
       >
-        Reach us
+        {t("reach")}
       </Heading>
       {/* phone */}
       <Flex
@@ -70,7 +71,7 @@ export const ReachUsBox = () => {
             "2xl": "16px",
           }}
         >
-          +1012 3456 789
+          {t("mobile_phone")}
         </Box>
       </Flex>
       {/* email */}
@@ -119,7 +120,7 @@ export const ReachUsBox = () => {
             "2xl": "16px",
           }}
         >
-          demo@gmail.com
+          {t("email")}
         </Box>
       </Flex>
       {/* map */}
@@ -168,7 +169,7 @@ export const ReachUsBox = () => {
             "2xl": "16px",
           }}
         >
-          132 Dartmouth Street Boston, Massachusetts 02156 United States
+          {t("address")}
         </Box>
       </Flex>
     </Box>

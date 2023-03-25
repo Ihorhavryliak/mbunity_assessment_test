@@ -1,7 +1,9 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 
 export const TextHeader = () => {
-  
+  const { t } = useTranslation();
+
   return (
     <Box
       textAlign="center"
@@ -14,7 +16,7 @@ export const TextHeader = () => {
         lineHeight={{ base: "36px", lg: "60px", xl: "60px", "2xl": "60px" }}
         fontSize={{ base: "24px", lg: "40px", xl: "40px", "2xl": "40px" }}
       >
-        Contact Us
+        {t("contact_us")}
       </Heading>
       {/* text */}
       <Text
@@ -26,7 +28,7 @@ export const TextHeader = () => {
         color="grayNew.100"
         px={{ base: "68px", lg: "0", xl: "0", "2xl": "0" }}
       >
-        Any question or remarks? Just write us a message!
+        {t("question")}
       </Text>
     </Box>
   );

@@ -16,6 +16,7 @@ import {
 import Icon from "../Icon/Icon";
 import userMobileImg from "../../assets/img/header/userMobile.png";
 import { Link, NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export type NavMenuMobileType = {
   isOpen: boolean;
@@ -23,6 +24,7 @@ export type NavMenuMobileType = {
 };
 
 export const NavMenuMobile = (props: NavMenuMobileType) => {
+  const { t } = useTranslation();
   const { setIsOpen, isOpen } = props;
   return (
     <>
@@ -94,8 +96,7 @@ export const NavMenuMobile = (props: NavMenuMobileType) => {
                     mb="30px"
                   >
                     <NavLink to="/" onClick={() => setIsOpen(!isOpen)}>
-                      {" "}
-                      Home
+                      {t("home")}
                     </NavLink>
                   </ListItem>
                   {/* drop down */}
@@ -104,7 +105,7 @@ export const NavMenuMobile = (props: NavMenuMobileType) => {
                       <MenuButton>
                         <Flex alignItems="center" gap="8px">
                           <Box as="span" color="white">
-                            Features
+                            {t("features")}
                           </Box>
                           <Icon
                             type="arrow"
@@ -117,27 +118,26 @@ export const NavMenuMobile = (props: NavMenuMobileType) => {
                       </MenuButton>
                       <MenuList>
                         <MenuItem as="a" href="#">
-                          Link 1
+                          {t("link1")}
                         </MenuItem>
                         <MenuItem as="a" href="#">
-                          Link 2
+                          {t("link2")}
                         </MenuItem>
                       </MenuList>
                     </Menu>
                   </ListItem>
                   <ListItem lineHeight="16px" color="white" mb="30px">
-                    Blog
+                    {t("blog")}
                   </ListItem>
                   <ListItem lineHeight="16px" color="white" mb="30px">
-                    Shop
+                    {t("shop")}
                   </ListItem>
                   <ListItem lineHeight="16px" color="white" mb="30px">
-                    About
+                    {t("about")}
                   </ListItem>
                   <ListItem lineHeight="16px" cursor="pointer" color="white">
                     <NavLink to="/contact" onClick={() => setIsOpen(!isOpen)}>
-                      {" "}
-                      Contact{" "}
+                      {t("contact")}
                     </NavLink>
                   </ListItem>
                 </List>

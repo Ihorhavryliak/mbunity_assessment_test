@@ -4,7 +4,6 @@ import Footer from "./Components/Footer/Footer";
 import { Flex } from "@chakra-ui/react";
 import "./styles/index.css";
 import "./styles/fonts.css";
-import "./utils/118n";
 
 function App() {
   return (

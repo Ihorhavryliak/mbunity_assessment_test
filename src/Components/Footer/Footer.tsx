@@ -4,12 +4,14 @@ import { LogoHeader } from "./LogoHeader";
 import { ReachUsBox } from "./ReachUsBox";
 import { SubscribeForm } from "../Form/SubscribeForm";
 import { InformationBox } from "./InformationBox";
+import { useTranslation } from "react-i18next";
 
 export type FormValues = {
   email: string;
 };
 
 const Footer = () => {
+  const { t } = useTranslation();
   //get function from react-hook-form
   const { register, handleSubmit, reset } = useForm<FormValues>();
   //send data
@@ -19,7 +21,7 @@ const Footer = () => {
     //reset all inputs
     reset();
   };
-  
+
   return (
     <Flex
       bg="black"
@@ -76,7 +78,7 @@ const Footer = () => {
               color="white"
               mb={{ base: "23px", lg: "29px", xl: "29px", "2xl": "29px" }}
             >
-              Join Our Newsletter
+              {t("newsletter")}
             </Heading>
             {/* form */}
             <SubscribeForm

@@ -11,9 +11,10 @@ i18n
       order: ["queryString", "cookie"],
       caches: ["cookie"],
     },
-    backend: {
-      loadPath: "/show_pages_web_app/locales/{{lng}}/{{ns}}.json",
-    },
+    //path when will be backend
+    /*     backend: {
+      loadPath: "/build/locales/{{lng}}/{{ns}}.json",
+    }, */
     interpolation: {
       escapeValue: false,
     },

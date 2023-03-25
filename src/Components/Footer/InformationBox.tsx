@@ -1,8 +1,10 @@
 import { Box, Flex, Heading } from "@chakra-ui/react";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export const InformationBox = () => {
-  
+  const { t } = useTranslation();
+
   return (
     <>
       {/* first */}
@@ -19,7 +21,7 @@ export const InformationBox = () => {
           color="white"
           mb="20px"
         >
-          Company
+          {t("company")}
         </Heading>
         {/* About */}
         <Flex gap="25px">
@@ -39,7 +41,7 @@ export const InformationBox = () => {
               "2xl": "16px",
             }}
           >
-            About
+            {t("about")}
           </Box>
         </Flex>
         {/* Contact */}
@@ -60,7 +62,7 @@ export const InformationBox = () => {
               "2xl": "16px",
             }}
           >
-            Contact
+            {t("contact")}
           </Box>
         </Flex>
         {/* Blogs */}
@@ -81,7 +83,7 @@ export const InformationBox = () => {
               "2xl": "16px",
             }}
           >
-            Blogs
+            {t("blogs")}
           </Box>
         </Flex>
       </Box>
@@ -99,7 +101,7 @@ export const InformationBox = () => {
           color="white"
           mb="20px"
         >
-          Legal
+          {t("legal")}
         </Heading>
         {/*  Privacy Policy */}
         <Flex gap="25px">
@@ -119,7 +121,7 @@ export const InformationBox = () => {
               "2xl": "16px",
             }}
           >
-            Privacy Policy
+            {t("policy")}
           </Box>
         </Flex>
         {/* Terms & Services */}
@@ -140,7 +142,7 @@ export const InformationBox = () => {
               "2xl": "16px",
             }}
           >
-            Terms & Services
+            {t("terms")}
           </Box>
         </Flex>
         {/* Terms of Use */}
@@ -161,7 +163,7 @@ export const InformationBox = () => {
               "2xl": "16px",
             }}
           >
-            Terms of Use
+            {t("terms_use")}
           </Box>
         </Flex>
         {/* Refund Policy */}
@@ -182,7 +184,7 @@ export const InformationBox = () => {
               "2xl": "16px",
             }}
           >
-            Refund Policy
+            {t("refund_policy")}
           </Box>
         </Flex>
       </Box>
@@ -201,7 +203,7 @@ export const InformationBox = () => {
           color="white"
           mb="20px"
         >
-          Quick Links
+          {t("links")}
         </Heading>
         {/*  Techlabz Keybox */}
         <Flex gap="25px">
@@ -221,7 +223,7 @@ export const InformationBox = () => {
               "2xl": "16px",
             }}
           >
-            Techlabz Keybox
+            {t("techlabz")}
           </Box>
         </Flex>
         {/* Downloads */}
@@ -242,7 +244,7 @@ export const InformationBox = () => {
               "2xl": "16px",
             }}
           >
-            Downloads
+            {t("downloads")}
           </Box>
         </Flex>
         {/* Forum */}
@@ -263,7 +265,7 @@ export const InformationBox = () => {
               "2xl": "16px",
             }}
           >
-            Forum
+            {t("forum")}
           </Box>
         </Flex>
       </Box>

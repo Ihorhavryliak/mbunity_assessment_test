@@ -1,9 +1,10 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 import Icon from "../Icon/Icon";
 import { SocialMediaIcons } from "./SocialMediaIcons";
 
 export const ContactInformation = () => {
-  
+  const { t } = useTranslation();
   return (
     <Box
       maxWidth={{ base: "100%", lg: "491px", xl: "491px", "2xl": "491px" }}
@@ -26,7 +27,7 @@ export const ContactInformation = () => {
         lineHeight={{ base: "30px", lg: "42px", xl: "42px", "2xl": "42px" }}
         color="white"
       >
-        Contact Information
+        {t("contact_information")}
       </Heading>
       {/* text */}
       <Text
@@ -35,7 +36,7 @@ export const ContactInformation = () => {
         mt="6px"
         color="grayNew.200"
       >
-        Say something to start a live chat!
+        {t("say_something")}
       </Text>
       {/*  contacts */}
       <Box
@@ -71,7 +72,7 @@ export const ContactInformation = () => {
               "2xl": "16px",
             }}
           >
-            +1012 3456 789
+            {t("mobile_phone")}
           </Box>
         </Flex>
         {/* email */}
@@ -104,7 +105,7 @@ export const ContactInformation = () => {
               "2xl": "16px",
             }}
           >
-            demo@gmail.com
+            {t("email")}
           </Box>
         </Flex>
         {/* map */}
@@ -148,7 +149,7 @@ export const ContactInformation = () => {
               "2xl": "none",
             }}
           >
-            132 Dartmouth Street Boston, Massachusetts 02156 United States
+            {t("address")}
           </Box>
         </Flex>
         {/* social media */}

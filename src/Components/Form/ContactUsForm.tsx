@@ -6,6 +6,7 @@ import {
 } from "react-hook-form";
 import { Dispatch, SetStateAction } from "react";
 import { FormValues } from "../Contact/Contact";
+import { useTranslation } from "react-i18next";
 
 type ContactUsFormType = {
   handleSubmit: UseFormHandleSubmit<FormValues>;
@@ -16,6 +17,7 @@ type ContactUsFormType = {
 };
 
 export const ContactUsForm = (props: ContactUsFormType) => {
+  const { t } = useTranslation();
   const { handleSubmit, onSubmit, isFocused, register, setIsFocused } = props;
   return (
     <Box w="100%">
@@ -46,7 +48,7 @@ export const ContactUsForm = (props: ContactUsFormType) => {
                 mb="0"
                 className={isFocused === "firstName" ? "color-active" : ""}
               >
-                First Name
+                {t("name")}
               </FormLabel>
               <input
                 className="form-input"
@@ -65,7 +67,7 @@ export const ContactUsForm = (props: ContactUsFormType) => {
                 color="grayNew.300"
                 className={isFocused === "lastName" ? "color-active" : ""}
               >
-                Last Name
+                {t("last")}
               </FormLabel>
               <input
                 className="form-input"
@@ -97,7 +99,7 @@ export const ContactUsForm = (props: ContactUsFormType) => {
                 color="grayNew.300"
                 className={isFocused === "email" ? "color-active" : ""}
               >
-                Email
+                {t("email_name")}
               </FormLabel>
               <input
                 className="form-input"
@@ -116,7 +118,7 @@ export const ContactUsForm = (props: ContactUsFormType) => {
                 color="grayNew.300"
                 className={isFocused === "phone" ? "color-active" : ""}
               >
-                Phone Number
+                {t("phone_name")}
               </FormLabel>
               <input
                 className="form-input"
@@ -151,7 +153,7 @@ export const ContactUsForm = (props: ContactUsFormType) => {
                     isFocused === "generalInquiry" ? "color-active" : ""
                   }
                 >
-                  Select Subject?
+                  {t("subject")}
                 </FormLabel>
                 <Flex
                   gap={{
@@ -177,7 +179,7 @@ export const ContactUsForm = (props: ContactUsFormType) => {
                       type="radio"
                       {...register("generalInquiry")}
                     />
-                    General Inquiry
+                    {t("general")}
                   </FormLabel>
                   {/*    generalInquiry 2 */}
                   <FormLabel
@@ -194,7 +196,7 @@ export const ContactUsForm = (props: ContactUsFormType) => {
                       type="radio"
                       {...register("generalInquiry")}
                     />
-                    General Inquiry
+                    {t("general")}
                   </FormLabel>
                   {/*    generalInquiry 3 */}
                   <FormLabel
@@ -211,7 +213,7 @@ export const ContactUsForm = (props: ContactUsFormType) => {
                       type="radio"
                       {...register("generalInquiry")}
                     />
-                    General Inquiry
+                    {t("general")}
                   </FormLabel>
                   {/*    generalInquiry 4 */}
                   <FormLabel
@@ -228,7 +230,7 @@ export const ContactUsForm = (props: ContactUsFormType) => {
                       type="radio"
                       {...register("generalInquiry")}
                     />
-                    General Inquiry
+                    {t("general")}
                   </FormLabel>
                 </Flex>
               </Box>
@@ -250,7 +252,7 @@ export const ContactUsForm = (props: ContactUsFormType) => {
                 color="grayNew.300"
                 className={isFocused === "message" ? "color-active" : ""}
               >
-                Message
+                {t("message")}
               </FormLabel>
               <input
                 placeholder="Write your message.."
@@ -290,7 +292,7 @@ export const ContactUsForm = (props: ContactUsFormType) => {
             type="submit"
             variant="black"
           >
-            Send Message
+            {t("send_message")}
           </Button>
         </Box>
       </form>
