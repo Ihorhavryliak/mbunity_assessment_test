@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       <Header />
-      <Flex as="header" justifyContent="center">
-        <Flex maxWidth="1240px" w="100%" justifyContent='center'>
+      <Flex as="header" justifyContent="center"   mx='20px'>
+        <Flex   justifyContent='center' maxWidth="1196px" w='100%'>
           <Routers />
         </Flex>
       </Flex>

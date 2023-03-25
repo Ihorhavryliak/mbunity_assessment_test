@@ -7,3 +7,5 @@ export { default as map } from "./Map.svg";
 export { default as twitter } from "./Twitter.svg";
 export { default as instagram } from "./Instagram.svg";
 export { default as discard } from "./Discard.svg";
+export { default as menu } from "./Ci_menu-alt-01.svg";
+export { default as close } from "./Close.svg";

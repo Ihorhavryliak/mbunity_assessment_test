@@ -22,7 +22,7 @@ const Icon = (props: IconType) => {
   } = props;
   return (
     <SVG
-      color={color}
+      fill={color}
       title={title}
       src={icons[type]}
       cacheRequests={true}
