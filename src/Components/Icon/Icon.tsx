@@ -25,7 +25,7 @@ const Icon = (props: IconType) => {
       fill={color}
       title={title}
       src={icons[type]}
-     /*  cacheRequests={true} */
+      cacheRequests={true}
       width={w}
       height={h}
       opacity={opacity}

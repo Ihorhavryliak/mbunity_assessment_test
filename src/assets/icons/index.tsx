@@ -1,11 +1,11 @@
-export { default as arrow } from "./Arrow.svg";
-/* export { default as cart } from "./Cart.svg"; */
-export { default as user } from "./User.svg";
-export { default as phone } from "./Phone-call.svg";
-export { default as email } from "./Email.svg";
-export { default as map } from "./Map.svg";
-export { default as twitter } from "./Twitter.svg";
-export { default as instagram } from "./Instagram.svg";
-export { default as discard } from "./Discard.svg";
-export { default as menu } from "./Ci_menu-alt-01.svg";
-export { default as close } from "./Close.svg";
+export { default as arrow } from "./arrow.svg";
+export { default as cart } from "./cart.svg";
+export { default as user } from "./user.svg";
+export { default as phone } from "./phone-call.svg";
+export { default as email } from "./email.svg";
+export { default as map } from "./map.svg";
+export { default as twitter } from "./twitter.svg";
+export { default as instagram } from "./instagram.svg";
+export { default as discard } from "./discard.svg";
+export { default as menu } from "./ci_menu-alt-01.svg";
+export { default as close } from "./close.svg";
