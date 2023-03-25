@@ -46,7 +46,7 @@ const Header = () => {
                 <Menu>
                   <MenuButton>
                     <Flex alignItems="center" gap="8px">
-                      <Box as="span"> Open menu</Box>
+                      <Box as="span">Features</Box>
                       <Icon type="arrow" w={12} h={7} title="arrow" />
                     </Flex>
                   </MenuButton>

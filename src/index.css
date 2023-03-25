@@ -1,5 +1,5 @@
 body {
-  background-color: #fbfbfb;
+  background-color: #fbfbfb !important;
 }
 
 /* connect fonts */
@@ -57,10 +57,63 @@ body {
 li .active {
   font-weight: 600;
 }
-
-
-.hover-social:hover, .hover-social:hover path{
+/* social contact*/
+.hover-social:hover,
+.hover-social:hover path {
   background: #fff !important;
   fill: #000 !important;
   cursor: pointer;
-} 
+}
+
+/* input  */
+.form-input {
+  border-bottom: 1px solid #8d8d8d;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: #8d8d8d;
+  line-height: 20px;
+  caret-color: #848484;
+  width: 100%;
+}
+
+:focus-visible {
+  outline: -webkit-focus-ring-color auto 0px;
+  border-color: #000;
+  color: #000;
+}
+
+.color-active {
+  color: #000 !important;
+}
+*::placeholder {
+  color: #8d8d8d !important;
+}
+/* input radio */
+input[type="radio"]:after {
+  width: 13px;
+  height: 13px;
+  border-radius: 15px;
+  top: 2px;
+  left: -1px;
+  position: relative;
+  background-color: #e0e0e0;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type="radio"]:checked:after {
+  width: 13px;
+  height: 13px;
+  border-radius: 15px;
+  top: 2px;
+  left: -1px;
+  position: relative;
+  background-color: #ffffff;
+  content: url("../src/assets/icons/Teenyicons_tick-circle-solid.svg");
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
