@@ -1,8 +1,7 @@
 import { Flex } from '@chakra-ui/react';
-import SVG from 'react-inlinesvg';
-import twitter from '../../assets/icons/twitter.svg';
-import instagram from '../../assets/icons/twitter.svg';
-import discard from '../../assets/icons/discard.svg';
+import { DiscardIcon } from '../Icons/DiscardIcon';
+import { InstagramIcon } from '../Icons/InstagramIcon';
+import { TwitterIcon } from '../Icons/TwitterIcon';
 
 export const SocialMediaIcons = () => {
   return (
@@ -28,13 +27,8 @@ export const SocialMediaIcons = () => {
         bg="black.100"
         className="hover-social"
       >
-        <SVG
-          cacheRequests={true}
-          src={twitter}
-          width={15}
-          height={12}
-          fill="#000"
-        />
+        
+        <TwitterIcon w='15' h='12'  color="#fff" />
       </Flex>
       {/* instagram */}
       <Flex
@@ -47,13 +41,8 @@ export const SocialMediaIcons = () => {
         bg="black.100"
         className="hover-social"
       >
-        <SVG
-          cacheRequests={true}
-          src={instagram}
-          width={15}
-          height={15}
-          fill="#000"
-        />
+     
+        <InstagramIcon w='15' h='15'  color="#fff" />
       </Flex>
       {/* discard */}
       <Flex
@@ -66,13 +55,7 @@ export const SocialMediaIcons = () => {
         bg="black.100"
         className="hover-social"
       >
-        <SVG
-          cacheRequests={true}
-          src={discard}
-          width={15}
-          height={10}
-          fill="#000"
-        />
+        <DiscardIcon w='15' h='10'  color="#fff" />
       </Flex>
     </Flex>
   );

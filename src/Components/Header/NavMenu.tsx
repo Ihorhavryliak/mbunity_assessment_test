@@ -10,8 +10,9 @@ import {
 } from '@chakra-ui/react';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import SVG from 'react-inlinesvg';
-import arrow from '../../assets/icons/arrow.svg';
+import { ArrowIcon } from '../Icons/ArrowIcon';
+
+
 
 export const NavMenu = () => {
   const { t } = useTranslation();
@@ -27,18 +28,13 @@ export const NavMenu = () => {
             <MenuButton>
               <Flex alignItems="center" gap="8px">
                 <Box as="span">{t('features')}</Box>
-                <SVG
-                  cacheRequests={true}
-                  src={arrow}
-                  width={18}
-                  height={19}
-                  fill="#1F1F1F"
-                />
+          
+                <ArrowIcon color='#1F1F1F' />
               </Flex>
             </MenuButton>
             <MenuList>
               <MenuItem as="a" href="#">
-                {t('link1')}
+                {t('link1')} 
               </MenuItem>
               <MenuItem as="a" href="#">
                 {t('link2')}

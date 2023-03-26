@@ -1,10 +1,9 @@
 import { Box, Flex, Heading, Text } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
-import SVG from 'react-inlinesvg';
+import { EmailIcon } from '../Icons/EmailIcon';
+import { MapIcon } from '../Icons/MapIcon';
+import { PhoneIcon } from '../Icons/PhoneIcon';
 import { SocialMediaIcons } from './SocialMediaIcons';
-import phone from '../../assets/icons/phone-call.svg';
-import email from '../../assets/icons/email.svg';
-import map from '../../assets/icons/map.svg';
 
 export const ContactInformation = () => {
   const { t } = useTranslation();
@@ -58,13 +57,7 @@ export const ContactInformation = () => {
           gap={{ base: '10px', lg: '25px', xl: '25px', '2xl': '25px' }}
         >
           <Box as="span" p="2px">
-            <SVG
-              cacheRequests={true}
-              src={phone}
-              width={20}
-              height={20}
-              fill="#000"
-            />
+            <PhoneIcon w="20" h="20" color='#fff' />
           </Box>
           <Box
             as="span"
@@ -97,13 +90,7 @@ export const ContactInformation = () => {
           mt={{ base: '15px', lg: '50px', xl: '50px', '2xl': '50px' }}
         >
           <Box as="span" p="2px">
-            <SVG
-              cacheRequests={true}
-              src={email}
-              width={20}
-              height={20}
-              fill="#000"
-            />
+            <EmailIcon w="20" h="20" color='#fff' />
           </Box>
           <Box
             as="span"
@@ -141,13 +128,7 @@ export const ContactInformation = () => {
           mt={{ base: '15px', lg: '50px', xl: '50px', '2xl': '50px' }}
         >
           <Box as="span" p="2px">
-            <SVG
-              cacheRequests={true}
-              src={map}
-              width={20}
-              height={20}
-              fill="#000"
-            />
+            <MapIcon w="20" h="20" color='#fff' />
           </Box>
           <Box
             as="span"

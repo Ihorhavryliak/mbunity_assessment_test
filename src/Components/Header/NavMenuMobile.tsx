@@ -16,11 +16,10 @@ import {
 import userMobileImg from '../../assets/img/header/userMobile.png';
 import { Link, NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import SVG from 'react-inlinesvg';
-import menu from '../../assets/icons/ci_menu-alt-01.svg';
-import close from '../../assets/icons/close.svg';
-import arrow from '../../assets/icons/arrow.svg';
-import cart from '../../assets/icons/cart.svg';
+import { ArrowIcon } from '../Icons/ArrowIcon';
+import { CloseIcon } from '../Icons/CloseIcon';
+import { MenuIcon } from '../Icons/MenuIcon';
+import { CartIcon } from '../Icons/CartIcon';
 
 export type NavMenuMobileType = {
   isOpen: boolean;
@@ -39,13 +38,7 @@ export const NavMenuMobile = (props: NavMenuMobileType) => {
         onClick={() => setIsOpen(!isOpen)}
         alignItems="center"
       >
-        <SVG
-          cacheRequests={true}
-          src={menu}
-          width={24}
-          height={24}
-          fill="#000"
-        />
+        <MenuIcon w="24" h="24" />
       </Box>
       {/*  Modal */}
       <Modal
@@ -89,13 +82,8 @@ export const NavMenuMobile = (props: NavMenuMobileType) => {
               cursor="pointer"
             >
               {/* icon close */}
-              <SVG
-                cacheRequests={true}
-                src={close}
-                width={24}
-                height={24}
-                fill="#000"
-              />
+
+              <CloseIcon w="24" h="24" color="#fff" />
             </Box>
           </ModalHeader>
           {/* menu */}
@@ -124,13 +112,7 @@ export const NavMenuMobile = (props: NavMenuMobileType) => {
                             {t('features')}
                           </Box>
 
-                          <SVG
-                            cacheRequests={true}
-                            src={arrow}
-                            width={12}
-                            height={7}
-                            fill="#fff"
-                          />
+                          <ArrowIcon color="#fff" />
                         </Flex>
                       </MenuButton>
                       <MenuList>
@@ -177,13 +159,7 @@ export const NavMenuMobile = (props: NavMenuMobileType) => {
                   borderRadius="50px"
                   borderColor="white.500"
                 >
-                  <SVG
-                    cacheRequests={true}
-                    src={cart}
-                    width={18}
-                    height={19}
-                    fill="#fff"
-                  />
+                  <CartIcon w="18" h="19" color="#fff" />
                 </Box>
               </Flex>
             </Box>
