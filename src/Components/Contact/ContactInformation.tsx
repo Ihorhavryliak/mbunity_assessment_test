@@ -57,7 +57,7 @@ export const ContactInformation = () => {
           gap={{ base: '10px', lg: '25px', xl: '25px', '2xl': '25px' }}
         >
           <Box as="span" p="2px">
-            <PhoneIcon w="20" h="20" color='#fff' />
+            <PhoneIcon w="20" h="20" color="#fff" />
           </Box>
           <Box
             as="span"
@@ -90,7 +90,7 @@ export const ContactInformation = () => {
           mt={{ base: '15px', lg: '50px', xl: '50px', '2xl': '50px' }}
         >
           <Box as="span" p="2px">
-            <EmailIcon w="20" h="20" color='#fff' />
+            <EmailIcon w="20" h="20" color="#fff" />
           </Box>
           <Box
             as="span"
@@ -128,7 +128,7 @@ export const ContactInformation = () => {
           mt={{ base: '15px', lg: '50px', xl: '50px', '2xl': '50px' }}
         >
           <Box as="span" p="2px">
-            <MapIcon w="20" h="20" color='#fff' />
+            <MapIcon w="20" h="20" color="#fff" />
           </Box>
           <Box
             as="span"

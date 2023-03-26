@@ -89,3 +89,10 @@ input[type='radio']:checked:after {
   visibility: visible;
   border: 2px solid white;
 }
+
+@media screen and (min-width: 900px) {
+  input[type='radio']:checked:after {
+    width: 14px;
+    height: 14px;
+  }
+}

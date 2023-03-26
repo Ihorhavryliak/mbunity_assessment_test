@@ -21,7 +21,7 @@ export const UserMenu = () => {
         borderRadius="50px"
         borderColor="black.700"
       >
-        <CartIcon w='18' h='19' />
+        <CartIcon w="18" h="19" />
       </Box>
     </Flex>
   );

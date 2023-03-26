@@ -55,7 +55,7 @@ export const ReachUsBox = () => {
         }}
       >
         <Box as="span" p="2px">
-          <PhoneIcon w="18" h="18" color='#fff' />
+          <PhoneIcon w="18" h="18" color="#fff" />
         </Box>
         <Box
           as="span"
@@ -104,7 +104,7 @@ export const ReachUsBox = () => {
         }}
       >
         <Box as="span" p="2px">
-          <EmailIcon w="20" h="20" color='#fff' />
+          <EmailIcon w="20" h="20" color="#fff" />
         </Box>
         <Box
           as="span"
@@ -153,7 +153,7 @@ export const ReachUsBox = () => {
         }}
       >
         <Box as="span" p="2px">
-          <MapIcon w="20" h="20" color='#fff' />
+          <MapIcon w="20" h="20" color="#fff" />
         </Box>
         <Box
           as="span"

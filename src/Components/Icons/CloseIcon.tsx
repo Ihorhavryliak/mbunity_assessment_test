@@ -14,9 +14,13 @@ export const CloseIcon = (props: ArrowIconType) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
- 
-<path d="M20 20L4 4M20 4L4 20" stroke="white" stroke-width="2" stroke-linecap="round"  fill={color} />
-
+      <path
+        d="M20 20L4 4M20 4L4 20"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+        fill={color}
+      />
     </svg>
   );
 };

@@ -27,8 +27,7 @@ export const SocialMediaIcons = () => {
         bg="black.100"
         className="hover-social"
       >
-        
-        <TwitterIcon w='15' h='12'  color="#fff" />
+        <TwitterIcon w="15" h="12" color="#fff" />
       </Flex>
       {/* instagram */}
       <Flex
@@ -41,8 +40,7 @@ export const SocialMediaIcons = () => {
         bg="black.100"
         className="hover-social"
       >
-     
-        <InstagramIcon w='15' h='15'  color="#fff" />
+        <InstagramIcon w="15" h="15" color="#fff" />
       </Flex>
       {/* discard */}
       <Flex
@@ -55,7 +53,7 @@ export const SocialMediaIcons = () => {
         bg="black.100"
         className="hover-social"
       >
-        <DiscardIcon w='15' h='10'  color="#fff" />
+        <DiscardIcon w="15" h="10" color="#fff" />
       </Flex>
     </Flex>
   );

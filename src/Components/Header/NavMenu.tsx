@@ -12,8 +12,6 @@ import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ArrowIcon } from '../Icons/ArrowIcon';
 
-
-
 export const NavMenu = () => {
   const { t } = useTranslation();
   return (
@@ -28,13 +26,13 @@ export const NavMenu = () => {
             <MenuButton>
               <Flex alignItems="center" gap="8px">
                 <Box as="span">{t('features')}</Box>
-          
-                <ArrowIcon color='#1F1F1F' />
+
+                <ArrowIcon color="#1F1F1F" />
               </Flex>
             </MenuButton>
             <MenuList>
               <MenuItem as="a" href="#">
-                {t('link1')} 
+                {t('link1')}
               </MenuItem>
               <MenuItem as="a" href="#">
                 {t('link2')}
