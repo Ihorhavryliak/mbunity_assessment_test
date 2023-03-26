@@ -275,6 +275,7 @@ export const ContactUsForm = (props: ContactUsFormType) => {
           }}
         >
           <Button
+            zIndex="3"
             w={{ base: '100%', lg: '214px', xl: '214px', '2xl': '214px' }}
             h={{ base: '38px', lg: '54px', xl: '54px', '2xl': '54px' }}
             fontSize={{
