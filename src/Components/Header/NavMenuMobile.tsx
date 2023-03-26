@@ -12,11 +12,15 @@ import {
   ModalBody,
   ModalContent,
   ModalHeader,
-} from "@chakra-ui/react";
-import Icon from "../Icon/Icon";
-import userMobileImg from "../../assets/img/header/userMobile.png";
-import { Link, NavLink } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+} from '@chakra-ui/react';
+import userMobileImg from '../../assets/img/header/userMobile.png';
+import { Link, NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import SVG from 'react-inlinesvg';
+import menu from '../../assets/icons/ci_menu-alt-01.svg';
+import close from '../../assets/icons/close.svg';
+import arrow from '../../assets/icons/arrow.svg';
+import cart from '../../assets/icons/cart.svg';
 
 export type NavMenuMobileType = {
   isOpen: boolean;
@@ -31,11 +35,17 @@ export const NavMenuMobile = (props: NavMenuMobileType) => {
       <Box
         as="button"
         h="24px"
-        display={{ base: "flex", lg: "none", xl: "none", "2xl": "none" }}
+        display={{ base: 'flex', lg: 'none', xl: 'none', '2xl': 'none' }}
         onClick={() => setIsOpen(!isOpen)}
         alignItems="center"
       >
-        <Icon type="menu" w={24} h={24} />
+        <SVG
+          cacheRequests={true}
+          src={menu}
+          width={24}
+          height={24}
+          fill="#000"
+        />
       </Box>
       {/*  Modal */}
       <Modal
@@ -74,12 +84,18 @@ export const NavMenuMobile = (props: NavMenuMobileType) => {
             <Box
               fill="primary.600"
               as="span"
-              _hover={{ fill: "primary.700" }}
+              _hover={{ fill: 'primary.700' }}
               onClick={() => setIsOpen(!isOpen)}
               cursor="pointer"
             >
               {/* icon close */}
-              <Icon type="close" w={24} h={24} />
+              <SVG
+                cacheRequests={true}
+                src={close}
+                width={24}
+                height={24}
+                fill="#000"
+              />
             </Box>
           </ModalHeader>
           {/* menu */}
@@ -96,7 +112,7 @@ export const NavMenuMobile = (props: NavMenuMobileType) => {
                     mb="30px"
                   >
                     <NavLink to="/" onClick={() => setIsOpen(!isOpen)}>
-                      {t("home")}
+                      {t('home')}
                     </NavLink>
                   </ListItem>
                   {/* drop down */}
@@ -105,39 +121,40 @@ export const NavMenuMobile = (props: NavMenuMobileType) => {
                       <MenuButton>
                         <Flex alignItems="center" gap="8px">
                           <Box as="span" color="white">
-                            {t("features")}
+                            {t('features')}
                           </Box>
-                          <Icon
-                            type="arrow"
-                            w={12}
-                            h={7}
-                            title="arrow"
-                            color={"#fff"}
+
+                          <SVG
+                            cacheRequests={true}
+                            src={arrow}
+                            width={12}
+                            height={7}
+                            fill="#fff"
                           />
                         </Flex>
                       </MenuButton>
                       <MenuList>
                         <MenuItem as="a" href="#">
-                          {t("link1")}
+                          {t('link1')}
                         </MenuItem>
                         <MenuItem as="a" href="#">
-                          {t("link2")}
+                          {t('link2')}
                         </MenuItem>
                       </MenuList>
                     </Menu>
                   </ListItem>
                   <ListItem lineHeight="16px" color="white" mb="30px">
-                    {t("blog")}
+                    {t('blog')}
                   </ListItem>
                   <ListItem lineHeight="16px" color="white" mb="30px">
-                    {t("shop")}
+                    {t('shop')}
                   </ListItem>
                   <ListItem lineHeight="16px" color="white" mb="30px">
-                    {t("about")}
+                    {t('about')}
                   </ListItem>
                   <ListItem lineHeight="16px" cursor="pointer" color="white">
                     <NavLink to="/contact" onClick={() => setIsOpen(!isOpen)}>
-                      {t("contact")}
+                      {t('contact')}
                     </NavLink>
                   </ListItem>
                 </List>
@@ -160,7 +177,13 @@ export const NavMenuMobile = (props: NavMenuMobileType) => {
                   borderRadius="50px"
                   borderColor="white.500"
                 >
-                  <Icon type="cart" w={18} h={19} title="cart" color="white" />
+                  <SVG
+                    cacheRequests={true}
+                    src={cart}
+                    width={18}
+                    height={19}
+                    fill="#fff"
+                  />
                 </Box>
               </Flex>
             </Box>

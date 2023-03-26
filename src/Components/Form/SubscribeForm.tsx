@@ -1,11 +1,11 @@
-import { Box, Button, Flex, FormControl, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, FormControl, Text } from '@chakra-ui/react';
 import {
   SubmitHandler,
   UseFormHandleSubmit,
   UseFormRegister,
-} from "react-hook-form";
-import { useTranslation } from "react-i18next";
-import { FormValues } from "../Footer/Footer";
+} from 'react-hook-form';
+import { useTranslation } from 'react-i18next';
+import { FormValues } from '../Footer/Footer';
 
 type SubscribeFormType = {
   handleSubmit: UseFormHandleSubmit<FormValues>;
@@ -23,14 +23,14 @@ export const SubscribeForm = (props: SubscribeFormType) => {
           {/* email */}
           <Flex w="100%">
             <input
-              placeholder={t("your_email") as string}
+              placeholder={t('your_email') as string}
               className="form-input-subscribe"
               type="email"
-              {...register("email")}
+              {...register('email')}
             />
             {/* button */}
             <Button type="submit" variant="subscribe">
-              {t("subscribe")}
+              {t('subscribe')}
             </Button>
           </Flex>
           {/* text */}
@@ -39,10 +39,10 @@ export const SubscribeForm = (props: SubscribeFormType) => {
             fontSize="13px"
             lineHeight="18px"
             color="white"
-            mt={{ base: "20px", lg: "19px", xl: "19px", "2xl": "19px" }}
+            mt={{ base: '20px', lg: '19px', xl: '19px', '2xl': '19px' }}
             opacity="0.5"
           >
-            {t("info")}
+            {t('info')}
           </Text>
         </FormControl>
       </form>

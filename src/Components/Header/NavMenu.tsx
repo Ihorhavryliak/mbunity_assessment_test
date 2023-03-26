@@ -7,10 +7,11 @@ import {
   MenuButton,
   MenuItem,
   MenuList,
-} from "@chakra-ui/react";
-import Icon from "../Icon/Icon";
-import { NavLink } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+} from '@chakra-ui/react';
+import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import SVG from 'react-inlinesvg';
+import arrow from '../../assets/icons/arrow.svg';
 
 export const NavMenu = () => {
   const { t } = useTranslation();
@@ -18,32 +19,38 @@ export const NavMenu = () => {
     <Flex as="nav" me="60px">
       <List display="flex" fontFamily="Roboto" gap="47px" color="black.100">
         <ListItem lineHeight="19px" cursor="pointer">
-          <NavLink to="/">{t("home")}</NavLink>
+          <NavLink to="/">{t('home')}</NavLink>
         </ListItem>
         {/* drop down */}
         <ListItem color="black.100" lineHeight="19px">
           <Menu>
             <MenuButton>
               <Flex alignItems="center" gap="8px">
-                <Box as="span">{t("features")}</Box>
-                <Icon type="arrow" w={12} h={7} title="arrow" />
+                <Box as="span">{t('features')}</Box>
+                <SVG
+                  cacheRequests={true}
+                  src={arrow}
+                  width={18}
+                  height={19}
+                  fill="#1F1F1F"
+                />
               </Flex>
             </MenuButton>
             <MenuList>
               <MenuItem as="a" href="#">
-                {t("link1")}
+                {t('link1')}
               </MenuItem>
               <MenuItem as="a" href="#">
-                {t("link2")}
+                {t('link2')}
               </MenuItem>
             </MenuList>
           </Menu>
         </ListItem>
-        <ListItem lineHeight="19px"> {t("blog")}</ListItem>
-        <ListItem lineHeight="19px">{t("shop")}</ListItem>
-        <ListItem lineHeight="19px">{t("about")}</ListItem>
+        <ListItem lineHeight="19px"> {t('blog')}</ListItem>
+        <ListItem lineHeight="19px">{t('shop')}</ListItem>
+        <ListItem lineHeight="19px">{t('about')}</ListItem>
         <ListItem lineHeight="19px" cursor="pointer">
-          <NavLink to="/contact"> {t("contact")} </NavLink>
+          <NavLink to="/contact"> {t('contact')} </NavLink>
         </ListItem>
       </List>
     </Flex>

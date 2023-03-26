@@ -1,155 +1,176 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
-import { useTranslation } from "react-i18next";
-import Icon from "../Icon/Icon";
-import { SocialMediaIcons } from "./SocialMediaIcons";
+import { Box, Flex, Heading, Text } from '@chakra-ui/react';
+import { useTranslation } from 'react-i18next';
+import SVG from 'react-inlinesvg';
+import { SocialMediaIcons } from './SocialMediaIcons';
+import phone from '../../assets/icons/phone-call.svg';
+import email from '../../assets/icons/email.svg';
+import map from '../../assets/icons/map.svg';
 
 export const ContactInformation = () => {
   const { t } = useTranslation();
   return (
     <Box
-      maxWidth={{ base: "100%", lg: "491px", xl: "491px", "2xl": "491px" }}
+      maxWidth={{ base: '100%', lg: '491px', xl: '491px', '2xl': '491px' }}
       width="100%"
       bg="black"
       borderRadius="10px"
       position="relative"
-      ps={{ base: "15px", lg: "40px", xl: "40px", "2xl": "40px" }}
-      pe={{ base: "15px", lg: "114px", xl: "114px", "2xl": "114px" }}
-      pt={{ base: "15px", lg: "40px", xl: "40px", "2xl": "40px" }}
-      pb={{ base: "25px", lg: "36px", xl: "36px", "2xl": "36px" }}
+      ps={{ base: '15px', lg: '40px', xl: '40px', '2xl': '40px' }}
+      pe={{ base: '15px', lg: '114px', xl: '114px', '2xl': '114px' }}
+      pt={{ base: '15px', lg: '40px', xl: '40px', '2xl': '40px' }}
+      pb={{ base: '25px', lg: '36px', xl: '36px', '2xl': '36px' }}
       overflow="hidden"
-      textAlign={{ base: "center", lg: "left", xl: "left", "2xl": "left" }}
+      textAlign={{ base: 'center', lg: 'left', xl: 'left', '2xl': 'left' }}
     >
       {/* title */}
       <Heading
         as="h2"
         fontFamily="Poppins-600"
-        fontSize={{ base: "20px", lg: "28px", xl: "28px", "2xl": "28px" }}
-        lineHeight={{ base: "30px", lg: "42px", xl: "42px", "2xl": "42px" }}
+        fontSize={{ base: '20px', lg: '28px', xl: '28px', '2xl': '28px' }}
+        lineHeight={{ base: '30px', lg: '42px', xl: '42px', '2xl': '42px' }}
         color="white"
       >
-        {t("contact_information")}
+        {t('contact_information')}
       </Heading>
       {/* text */}
       <Text
-        fontSize={{ base: "11px", lg: "18px", xl: "18px", "2xl": "18px" }}
-        lineHeight={{ base: "16px", lg: "27px", xl: "27px", "2xl": "27px" }}
+        fontSize={{ base: '11px', lg: '18px', xl: '18px', '2xl': '18px' }}
+        lineHeight={{ base: '16px', lg: '27px', xl: '27px', '2xl': '27px' }}
         mt="6px"
         color="grayNew.200"
       >
-        {t("say_something")}
+        {t('say_something')}
       </Text>
       {/*  contacts */}
       <Box
-        mt={{ base: "12px", lg: "111px", xl: "111px", "2xl": "111px" }}
+        mt={{ base: '12px', lg: '111px', xl: '111px', '2xl': '111px' }}
         color="white"
       >
         {/* phone */}
         <Flex
           flexDirection={{
-            base: "column",
-            lg: "row",
-            xl: "row",
-            "2xl": "row",
+            base: 'column',
+            lg: 'row',
+            xl: 'row',
+            '2xl': 'row',
           }}
           alignItems="center"
-          gap={{ base: "10px", lg: "25px", xl: "25px", "2xl": "25px" }}
+          gap={{ base: '10px', lg: '25px', xl: '25px', '2xl': '25px' }}
         >
           <Box as="span" p="2px">
-            <Icon type="phone" w={20} h={20} />
+            <SVG
+              cacheRequests={true}
+              src={phone}
+              width={20}
+              height={20}
+              fill="#000"
+            />
           </Box>
           <Box
             as="span"
             lineHeight={{
-              base: "18px",
-              lg: "24px",
-              xl: "24px",
-              "2xl": "24px",
+              base: '18px',
+              lg: '24px',
+              xl: '24px',
+              '2xl': '24px',
             }}
             fontSize={{
-              base: "12px",
-              lg: "16px",
-              xl: "16px",
-              "2xl": "16px",
+              base: '12px',
+              lg: '16px',
+              xl: '16px',
+              '2xl': '16px',
             }}
           >
-            {t("mobile_phone")}
+            {t('mobile_phone')}
           </Box>
         </Flex>
         {/* email */}
         <Flex
           flexDirection={{
-            base: "column",
-            lg: "row",
-            xl: "row",
-            "2xl": "row",
+            base: 'column',
+            lg: 'row',
+            xl: 'row',
+            '2xl': 'row',
           }}
           alignItems="center"
-          gap={{ base: "10px", lg: "25px", xl: "25px", "2xl": "25px" }}
-          mt={{ base: "15px", lg: "50px", xl: "50px", "2xl": "50px" }}
+          gap={{ base: '10px', lg: '25px', xl: '25px', '2xl': '25px' }}
+          mt={{ base: '15px', lg: '50px', xl: '50px', '2xl': '50px' }}
         >
           <Box as="span" p="2px">
-            <Icon type="email" w={20} h={20} />
+            <SVG
+              cacheRequests={true}
+              src={email}
+              width={20}
+              height={20}
+              fill="#000"
+            />
           </Box>
           <Box
             as="span"
             lineHeight={{
-              base: "18px",
-              lg: "24px",
-              xl: "24px",
-              "2xl": "24px",
+              base: '18px',
+              lg: '24px',
+              xl: '24px',
+              '2xl': '24px',
             }}
             fontSize={{
-              base: "12px",
-              lg: "16px",
-              xl: "16px",
-              "2xl": "16px",
+              base: '12px',
+              lg: '16px',
+              xl: '16px',
+              '2xl': '16px',
             }}
           >
-            {t("email")}
+            {t('email')}
           </Box>
         </Flex>
         {/* map */}
         <Flex
           flexDirection={{
-            base: "column",
-            lg: "row",
-            xl: "row",
-            "2xl": "row",
+            base: 'column',
+            lg: 'row',
+            xl: 'row',
+            '2xl': 'row',
           }}
           alignItems={{
-            base: "center",
-            lg: "flex-start",
-            xl: "flex-start",
-            "2xl": "flex-start",
+            base: 'center',
+            lg: 'flex-start',
+            xl: 'flex-start',
+            '2xl': 'flex-start',
           }}
-          gap={{ base: "10px", lg: "25px", xl: "25px", "2xl": "25px" }}
-          mt={{ base: "15px", lg: "50px", xl: "50px", "2xl": "50px" }}
+          gap={{ base: '10px', lg: '25px', xl: '25px', '2xl': '25px' }}
+          mt={{ base: '15px', lg: '50px', xl: '50px', '2xl': '50px' }}
         >
           <Box as="span" p="2px">
-            <Icon type="map" w={20} h={20} />
+            <SVG
+              cacheRequests={true}
+              src={map}
+              width={20}
+              height={20}
+              fill="#000"
+            />
           </Box>
           <Box
             as="span"
             lineHeight={{
-              base: "18px",
-              lg: "24px",
-              xl: "24px",
-              "2xl": "24px",
+              base: '18px',
+              lg: '24px',
+              xl: '24px',
+              '2xl': '24px',
             }}
             fontSize={{
-              base: "12px",
-              lg: "16px",
-              xl: "16px",
-              "2xl": "16px",
+              base: '12px',
+              lg: '16px',
+              xl: '16px',
+              '2xl': '16px',
             }}
             maxWidth={{
-              base: "221px",
-              lg: "none",
-              xl: "none",
-              "2xl": "none",
+              base: '221px',
+              lg: 'none',
+              xl: 'none',
+              '2xl': 'none',
             }}
           >
-            {t("address")}
+            {t('address')}
           </Box>
         </Flex>
         {/* social media */}
@@ -158,10 +179,10 @@ export const ContactInformation = () => {
         <Box
           as="span"
           position="absolute"
-          right={{ base: "26px", lg: "70px", xl: "70px", "2xl": "70px" }}
-          bottom={{ base: "52px", lg: "71px", xl: "71px", "2xl": "71px" }}
-          w={{ base: "54px", lg: "138px", xl: "138px", "2xl": "138px" }}
-          h={{ base: "54px", lg: "138px", xl: "138px", "2xl": "138px" }}
+          right={{ base: '26px', lg: '70px', xl: '70px', '2xl': '70px' }}
+          bottom={{ base: '52px', lg: '71px', xl: '71px', '2xl': '71px' }}
+          w={{ base: '54px', lg: '138px', xl: '138px', '2xl': '138px' }}
+          h={{ base: '54px', lg: '138px', xl: '138px', '2xl': '138px' }}
           borderRadius="100%"
           bg="black.200"
           zIndex="1"
@@ -170,14 +191,14 @@ export const ContactInformation = () => {
           as="span"
           position="absolute"
           right={{
-            base: "-115px",
-            lg: "-95px",
-            xl: "-95px",
-            "2xl": "-95px",
+            base: '-115px',
+            lg: '-95px',
+            xl: '-95px',
+            '2xl': '-95px',
           }}
           bottom="-84px"
-          w={{ base: "192px", lg: "269px", xl: "269px", "2xl": "269px" }}
-          h={{ base: "192px", lg: "269px", xl: "269px", "2xl": "269px" }}
+          w={{ base: '192px', lg: '269px', xl: '269px', '2xl': '269px' }}
+          h={{ base: '192px', lg: '269px', xl: '269px', '2xl': '269px' }}
           borderRadius="100%"
           bg="black.400"
           zIndex="2"

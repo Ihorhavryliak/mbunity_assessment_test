@@ -1,6 +1,5 @@
-import { Box, Flex, Heading } from "@chakra-ui/react";
-import React from "react";
-import { useTranslation } from "react-i18next";
+import { Box, Flex, Heading } from '@chakra-ui/react';
+import { useTranslation } from 'react-i18next';
 
 export const InformationBox = () => {
   const { t } = useTranslation();
@@ -9,39 +8,39 @@ export const InformationBox = () => {
     <>
       {/* first */}
       <Box
-        me={{ base: "0", lg: "60px", xl: "60px", "2xl": "60px" }}
-        mb={{ base: "40px", lg: "0", xl: "0", "2xl": "0" }}
+        me={{ base: '0', lg: '60px', xl: '60px', '2xl': '60px' }}
+        mb={{ base: '40px', lg: '0', xl: '0', '2xl': '0' }}
       >
         {/* title */}
         <Heading
           as="h3"
           fontFamily="Poppins-600"
-          fontSize={{ base: "16px", lg: "18px", xl: "18px", "2xl": "18px" }}
+          fontSize={{ base: '16px', lg: '18px', xl: '18px', '2xl': '18px' }}
           lineHeight="26px"
           color="white"
           mb="20px"
         >
-          {t("company")}
+          {t('company')}
         </Heading>
         {/* About */}
         <Flex gap="25px">
           <Box
             as="span"
             lineHeight={{
-              base: "18px",
-              lg: "24px",
-              xl: "24px",
-              "2xl": "24px",
+              base: '18px',
+              lg: '24px',
+              xl: '24px',
+              '2xl': '24px',
             }}
             color="white"
             fontSize={{
-              base: "12px",
-              lg: "16px",
-              xl: "16px",
-              "2xl": "16px",
+              base: '12px',
+              lg: '16px',
+              xl: '16px',
+              '2xl': '16px',
             }}
           >
-            {t("about")}
+            {t('about')}
           </Box>
         </Flex>
         {/* Contact */}
@@ -49,20 +48,20 @@ export const InformationBox = () => {
           <Box
             as="span"
             lineHeight={{
-              base: "18px",
-              lg: "24px",
-              xl: "24px",
-              "2xl": "24px",
+              base: '18px',
+              lg: '24px',
+              xl: '24px',
+              '2xl': '24px',
             }}
             color="white"
             fontSize={{
-              base: "12px",
-              lg: "16px",
-              xl: "16px",
-              "2xl": "16px",
+              base: '12px',
+              lg: '16px',
+              xl: '16px',
+              '2xl': '16px',
             }}
           >
-            {t("contact")}
+            {t('contact')}
           </Box>
         </Flex>
         {/* Blogs */}
@@ -70,58 +69,58 @@ export const InformationBox = () => {
           <Box
             as="span"
             lineHeight={{
-              base: "18px",
-              lg: "24px",
-              xl: "24px",
-              "2xl": "24px",
+              base: '18px',
+              lg: '24px',
+              xl: '24px',
+              '2xl': '24px',
             }}
             color="white"
             fontSize={{
-              base: "12px",
-              lg: "16px",
-              xl: "16px",
-              "2xl": "16px",
+              base: '12px',
+              lg: '16px',
+              xl: '16px',
+              '2xl': '16px',
             }}
           >
-            {t("blogs")}
+            {t('blogs')}
           </Box>
         </Flex>
       </Box>
       {/* second */}
       <Box
-        me={{ base: "0", lg: "60px", xl: "60px", "2xl": "60px" }}
-        mb={{ base: "40px", lg: "0", xl: "0", "2xl": "0" }}
+        me={{ base: '0', lg: '60px', xl: '60px', '2xl': '60px' }}
+        mb={{ base: '40px', lg: '0', xl: '0', '2xl': '0' }}
       >
         {/* title */}
         <Heading
           as="h3"
           fontFamily="Poppins-600"
-          fontSize={{ base: "16px", lg: "18px", xl: "18px", "2xl": "18px" }}
+          fontSize={{ base: '16px', lg: '18px', xl: '18px', '2xl': '18px' }}
           lineHeight="26px"
           color="white"
           mb="20px"
         >
-          {t("legal")}
+          {t('legal')}
         </Heading>
         {/*  Privacy Policy */}
         <Flex gap="25px">
           <Box
             as="span"
             lineHeight={{
-              base: "18px",
-              lg: "24px",
-              xl: "24px",
-              "2xl": "24px",
+              base: '18px',
+              lg: '24px',
+              xl: '24px',
+              '2xl': '24px',
             }}
             color="white"
             fontSize={{
-              base: "12px",
-              lg: "16px",
-              xl: "16px",
-              "2xl": "16px",
+              base: '12px',
+              lg: '16px',
+              xl: '16px',
+              '2xl': '16px',
             }}
           >
-            {t("policy")}
+            {t('policy')}
           </Box>
         </Flex>
         {/* Terms & Services */}
@@ -129,20 +128,20 @@ export const InformationBox = () => {
           <Box
             as="span"
             lineHeight={{
-              base: "18px",
-              lg: "24px",
-              xl: "24px",
-              "2xl": "24px",
+              base: '18px',
+              lg: '24px',
+              xl: '24px',
+              '2xl': '24px',
             }}
             color="white"
             fontSize={{
-              base: "12px",
-              lg: "16px",
-              xl: "16px",
-              "2xl": "16px",
+              base: '12px',
+              lg: '16px',
+              xl: '16px',
+              '2xl': '16px',
             }}
           >
-            {t("terms")}
+            {t('terms')}
           </Box>
         </Flex>
         {/* Terms of Use */}
@@ -150,20 +149,20 @@ export const InformationBox = () => {
           <Box
             as="span"
             lineHeight={{
-              base: "18px",
-              lg: "24px",
-              xl: "24px",
-              "2xl": "24px",
+              base: '18px',
+              lg: '24px',
+              xl: '24px',
+              '2xl': '24px',
             }}
             color="white"
             fontSize={{
-              base: "12px",
-              lg: "16px",
-              xl: "16px",
-              "2xl": "16px",
+              base: '12px',
+              lg: '16px',
+              xl: '16px',
+              '2xl': '16px',
             }}
           >
-            {t("terms_use")}
+            {t('terms_use')}
           </Box>
         </Flex>
         {/* Refund Policy */}
@@ -171,59 +170,59 @@ export const InformationBox = () => {
           <Box
             as="span"
             lineHeight={{
-              base: "18px",
-              lg: "24px",
-              xl: "24px",
-              "2xl": "24px",
+              base: '18px',
+              lg: '24px',
+              xl: '24px',
+              '2xl': '24px',
             }}
             color="white"
             fontSize={{
-              base: "12px",
-              lg: "16px",
-              xl: "16px",
-              "2xl": "16px",
+              base: '12px',
+              lg: '16px',
+              xl: '16px',
+              '2xl': '16px',
             }}
           >
-            {t("refund_policy")}
+            {t('refund_policy')}
           </Box>
         </Flex>
       </Box>
 
       {/*  thirty */}
       <Box
-        me={{ base: "0", lg: "60px", xl: "60px", "2xl": "60px" }}
-        mb={{ base: "40px", lg: "0", xl: "0", "2xl": "0" }}
+        me={{ base: '0', lg: '60px', xl: '60px', '2xl': '60px' }}
+        mb={{ base: '40px', lg: '0', xl: '0', '2xl': '0' }}
       >
         {/* title */}
         <Heading
           as="h3"
           fontFamily="Poppins-600"
-          fontSize={{ base: "16px", lg: "18px", xl: "18px", "2xl": "18px" }}
+          fontSize={{ base: '16px', lg: '18px', xl: '18px', '2xl': '18px' }}
           lineHeight="26px"
           color="white"
           mb="20px"
         >
-          {t("links")}
+          {t('links')}
         </Heading>
         {/*  Techlabz Keybox */}
         <Flex gap="25px">
           <Box
             as="span"
             lineHeight={{
-              base: "18px",
-              lg: "24px",
-              xl: "24px",
-              "2xl": "24px",
+              base: '18px',
+              lg: '24px',
+              xl: '24px',
+              '2xl': '24px',
             }}
             color="white"
             fontSize={{
-              base: "12px",
-              lg: "16px",
-              xl: "16px",
-              "2xl": "16px",
+              base: '12px',
+              lg: '16px',
+              xl: '16px',
+              '2xl': '16px',
             }}
           >
-            {t("techlabz")}
+            {t('techlabz')}
           </Box>
         </Flex>
         {/* Downloads */}
@@ -231,20 +230,20 @@ export const InformationBox = () => {
           <Box
             as="span"
             lineHeight={{
-              base: "18px",
-              lg: "24px",
-              xl: "24px",
-              "2xl": "24px",
+              base: '18px',
+              lg: '24px',
+              xl: '24px',
+              '2xl': '24px',
             }}
             color="white"
             fontSize={{
-              base: "12px",
-              lg: "16px",
-              xl: "16px",
-              "2xl": "16px",
+              base: '12px',
+              lg: '16px',
+              xl: '16px',
+              '2xl': '16px',
             }}
           >
-            {t("downloads")}
+            {t('downloads')}
           </Box>
         </Flex>
         {/* Forum */}
@@ -252,20 +251,20 @@ export const InformationBox = () => {
           <Box
             as="span"
             lineHeight={{
-              base: "18px",
-              lg: "24px",
-              xl: "24px",
-              "2xl": "24px",
+              base: '18px',
+              lg: '24px',
+              xl: '24px',
+              '2xl': '24px',
             }}
             color="white"
             fontSize={{
-              base: "12px",
-              lg: "16px",
-              xl: "16px",
-              "2xl": "16px",
+              base: '12px',
+              lg: '16px',
+              xl: '16px',
+              '2xl': '16px',
             }}
           >
-            {t("forum")}
+            {t('forum')}
           </Box>
         </Flex>
       </Box>

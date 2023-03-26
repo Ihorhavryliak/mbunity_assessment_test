@@ -62,7 +62,7 @@ li .active {
   color: #616161;
 }
 /* input radio */
-input[type="radio"]:after {
+input[type='radio']:after {
   width: 13px;
   height: 13px;
   border-radius: 15px;
@@ -70,13 +70,13 @@ input[type="radio"]:after {
   left: -1px;
   position: relative;
   background-color: #e0e0e0;
-  content: "";
+  content: '';
   display: inline-block;
   visibility: visible;
   border: 2px solid white;
 }
 
-input[type="radio"]:checked:after {
+input[type='radio']:checked:after {
   width: 13px;
   height: 13px;
   border-radius: 15px;
@@ -84,7 +84,7 @@ input[type="radio"]:checked:after {
   left: -1px;
   position: relative;
   background-color: #ffffff;
-  content: url("../assets/icons/teenyicons_tick-circle-solid.svg");
+  content: url('../assets/icons/teenyicons_tick-circle-solid.svg');
   display: inline-block;
   visibility: visible;
   border: 2px solid white;

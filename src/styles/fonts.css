@@ -1,59 +1,58 @@
-
 /* connect fonts */
 @font-face {
-  font-family: "Roboto";
-  src: local("Roboto"),
-    url("../assets/fonts/Roboto/Roboto-Regular.ttf") format("opentype");
+  font-family: 'Roboto';
+  src: local('Roboto'),
+    url('../assets/fonts/Roboto/Roboto-Regular.ttf') format('opentype');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Inter-800";
-  src: local("Inter-800"),
-    url("../assets/fonts/Inter/Inter-ExtraBold.ttf") format("opentype");
+  font-family: 'Inter-800';
+  src: local('Inter-800'),
+    url('../assets/fonts/Inter/Inter-ExtraBold.ttf') format('opentype');
   font-style: normal;
   font-weight: 800;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Poppins";
-  src: local("Poppins"),
-    url("../assets/fonts/Poppins/Poppins-Regular.ttf") format("opentype");
+  font-family: 'Poppins';
+  src: local('Poppins'),
+    url('../assets/fonts/Poppins/Poppins-Regular.ttf') format('opentype');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
-  font-family: "Poppins-700";
-  src: local("Poppins-700"),
-    url("../assets/fonts/Poppins/Poppins-Bold.ttf") format("opentype");
+  font-family: 'Poppins-700';
+  src: local('Poppins-700'),
+    url('../assets/fonts/Poppins/Poppins-Bold.ttf') format('opentype');
   font-style: normal;
   font-weight: 800;
   font-display: swap;
 }
 @font-face {
-  font-family: "Poppins-500";
-  src: local("Poppins-500"),
-    url("../assets/fonts/Poppins/Poppins-Medium.ttf") format("opentype");
+  font-family: 'Poppins-500';
+  src: local('Poppins-500'),
+    url('../assets/fonts/Poppins/Poppins-Medium.ttf') format('opentype');
   font-style: normal;
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
-  font-family: "Poppins-600";
-  src: local("Poppins-600"),
-    url("../assets/fonts/Poppins/Poppins-SemiBold.ttf") format("opentype");
+  font-family: 'Poppins-600';
+  src: local('Poppins-600'),
+    url('../assets/fonts/Poppins/Poppins-SemiBold.ttf') format('opentype');
   font-style: normal;
   font-weight: 600;
   font-display: swap;
 }
 @font-face {
-  font-family: "Manrope-500";
-  src: local("Manrope-500"),
-    url("../assets/fonts/Manrope/Manrope-Medium.ttf") format("opentype");
+  font-family: 'Manrope-500';
+  src: local('Manrope-500'),
+    url('../assets/fonts/Manrope/Manrope-Medium.ttf') format('opentype');
   font-style: normal;
   font-weight: 5600;
   font-display: swap;

@@ -1,5 +1,5 @@
-import { Heading } from "@chakra-ui/react";
-import { useTranslation } from "react-i18next";
+import { Heading } from '@chakra-ui/react';
+import { useTranslation } from 'react-i18next';
 
 export const LogoHeader = () => {
   const { t } = useTranslation();
@@ -12,7 +12,7 @@ export const LogoHeader = () => {
       color="white"
       textAlign="center"
     >
-      {t("logo")}
+      {t('logo')}
     </Heading>
   );
 };

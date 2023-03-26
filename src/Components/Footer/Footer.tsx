@@ -1,10 +1,10 @@
-import { Box, Flex, Heading } from "@chakra-ui/react";
-import { SubmitHandler, useForm } from "react-hook-form";
-import { LogoHeader } from "./LogoHeader";
-import { ReachUsBox } from "./ReachUsBox";
-import { SubscribeForm } from "../Form/SubscribeForm";
-import { InformationBox } from "./InformationBox";
-import { useTranslation } from "react-i18next";
+import { Box, Flex, Heading } from '@chakra-ui/react';
+import { SubmitHandler, useForm } from 'react-hook-form';
+import { LogoHeader } from './LogoHeader';
+import { ReachUsBox } from './ReachUsBox';
+import { SubscribeForm } from '../Form/SubscribeForm';
+import { InformationBox } from './InformationBox';
+import { useTranslation } from 'react-i18next';
 
 export type FormValues = {
   email: string;
@@ -26,14 +26,14 @@ const Footer = () => {
     <Flex
       bg="black"
       justifyContent="center"
-      mt={{ base: "53px", lg: "50px", xl: "50px", "2xl": "50px" }}
+      mt={{ base: '53px', lg: '50px', xl: '50px', '2xl': '50px' }}
     >
       <Box
         maxWidth="1281px"
         w="100%"
-        pt={{ base: "19px", lg: "80px", xl: "80px", "2xl": "80px" }}
+        pt={{ base: '19px', lg: '80px', xl: '80px', '2xl': '80px' }}
         mx="20px"
-        pb={{ base: "-5px", lg: "66px", xl: "66px", "2xl": "66px" }}
+        pb={{ base: '-5px', lg: '66px', xl: '66px', '2xl': '66px' }}
       >
         {/* logo */}
         <LogoHeader />
@@ -43,14 +43,14 @@ const Footer = () => {
           ps="21px"
           borderTop="1px"
           borderColor="white"
-          mt={{ base: "20px", lg: "45px", xl: "45px", "2xl": "45px" }}
+          mt={{ base: '20px', lg: '45px', xl: '45px', '2xl': '45px' }}
           flexWrap="wrap"
           justifyContent={{
-            base: "space-between",
-            md: "",
-            lg: "",
-            xl: "",
-            "2xl": "",
+            base: 'space-between',
+            md: '',
+            lg: '',
+            xl: '',
+            '2xl': '',
           }}
         >
           {/*    Reach us */}
@@ -59,12 +59,12 @@ const Footer = () => {
           <InformationBox />
           {/*     Subscribe news Box */}
           <Box
-            mb={{ base: "40px", lg: "0", xl: "0", "2xl": "0" }}
+            mb={{ base: '40px', lg: '0', xl: '0', '2xl': '0' }}
             bg="#131313"
-            pt={{ base: "17px", lg: "14px", xl: "14px", "2xl": "14px" }}
-            pb={{ base: "14px", lg: "21px", xl: "21px", "2xl": "21px" }}
-            ps={{ base: "14px", lg: "13px", xl: "13px", "2xl": "13px" }}
-            pe={{ base: "29px", lg: "14px", xl: "14px", "2xl": "14px" }}
+            pt={{ base: '17px', lg: '14px', xl: '14px', '2xl': '14px' }}
+            pb={{ base: '14px', lg: '21px', xl: '21px', '2xl': '21px' }}
+            ps={{ base: '14px', lg: '13px', xl: '13px', '2xl': '13px' }}
+            pe={{ base: '29px', lg: '14px', xl: '14px', '2xl': '14px' }}
             borderRadius="10px"
             maxHeight="184px"
             maxWidth="304px"
@@ -73,12 +73,12 @@ const Footer = () => {
             <Heading
               as="h3"
               fontFamily="Poppins-600"
-              fontSize={{ base: "16px", lg: "18px", xl: "18px", "2xl": "18px" }}
+              fontSize={{ base: '16px', lg: '18px', xl: '18px', '2xl': '18px' }}
               lineHeight="26px"
               color="white"
-              mb={{ base: "23px", lg: "29px", xl: "29px", "2xl": "29px" }}
+              mb={{ base: '23px', lg: '29px', xl: '29px', '2xl': '29px' }}
             >
-              {t("newsletter")}
+              {t('newsletter')}
             </Heading>
             {/* form */}
             <SubscribeForm

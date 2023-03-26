@@ -1,6 +1,7 @@
-import { Box, Flex, Image } from "@chakra-ui/react";
-import Icon from "../Icon/Icon";
-import userImg from "../../assets/img/header/user.png";
+import { Box, Flex, Image } from '@chakra-ui/react';
+import userImg from '../../assets/img/header/user.png';
+import SVG from 'react-inlinesvg';
+import cart from '../../assets/icons/cart.svg';
 
 export const UserMenu = () => {
   return (
@@ -21,7 +22,13 @@ export const UserMenu = () => {
         borderRadius="50px"
         borderColor="black.700"
       >
-        <Icon type="cart" w={18} h={19} title="arrow" />
+        <SVG
+          cacheRequests={true}
+          src={cart}
+          width={18}
+          height={19}
+          fill="#000"
+        />
       </Box>
     </Flex>
   );

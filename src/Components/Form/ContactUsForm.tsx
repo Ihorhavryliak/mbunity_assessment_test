@@ -1,12 +1,12 @@
-import { Box, Button, Flex, FormControl, FormLabel } from "@chakra-ui/react";
+import { Box, Button, Flex, FormControl, FormLabel } from '@chakra-ui/react';
 import {
   SubmitHandler,
   UseFormHandleSubmit,
   UseFormRegister,
-} from "react-hook-form";
-import { Dispatch, SetStateAction } from "react";
-import { FormValues } from "../Contact/Contact";
-import { useTranslation } from "react-i18next";
+} from 'react-hook-form';
+import { Dispatch, SetStateAction } from 'react';
+import { FormValues } from '../Contact/Contact';
+import { useTranslation } from 'react-i18next';
 
 type ContactUsFormType = {
   handleSubmit: UseFormHandleSubmit<FormValues>;
@@ -23,21 +23,21 @@ export const ContactUsForm = (props: ContactUsFormType) => {
     <Box w="100%">
       <form onSubmit={handleSubmit(onSubmit)}>
         <FormControl
-          mt={{ base: "30px", lg: "50px", xl: "50px", "2xl": "50px" }}
+          mt={{ base: '30px', lg: '50px', xl: '50px', '2xl': '50px' }}
           fontFamily="Poppins-500"
           w="100%"
         >
           {/*   the first line */}
           <Flex
             flexDirection={{
-              base: "column",
-              lg: "row",
-              xl: "row",
-              "2xl": "row",
+              base: 'column',
+              lg: 'row',
+              xl: 'row',
+              '2xl': 'row',
             }}
             justifyContent="space-between"
-            gap={{ base: "20px", lg: "39px", xl: "39px", "2xl": "39px" }}
-            mb={{ base: "20px", lg: "45px", xl: "45px", "2xl": "45px" }}
+            gap={{ base: '20px', lg: '39px', xl: '39px', '2xl': '39px' }}
+            mb={{ base: '20px', lg: '45px', xl: '45px', '2xl': '45px' }}
           >
             {/*  first name */}
             <Box w="100%">
@@ -46,16 +46,16 @@ export const ContactUsForm = (props: ContactUsFormType) => {
                 lineHeight="20px"
                 color="grayNew.300"
                 mb="0"
-                className={isFocused === "firstName" ? "color-active" : ""}
+                className={isFocused === 'firstName' ? 'color-active' : ''}
               >
-                {t("name")}
+                {t('name')}
               </FormLabel>
               <input
                 className="form-input"
                 type="text"
-                {...register("firstName")}
-                onFocus={() => setIsFocused("firstName")}
-                onBlur={() => setIsFocused("")}
+                {...register('firstName')}
+                onFocus={() => setIsFocused('firstName')}
+                onBlur={() => setIsFocused('')}
               />
             </Box>
             {/*   last name */}
@@ -65,30 +65,30 @@ export const ContactUsForm = (props: ContactUsFormType) => {
                 fontSize="12px"
                 lineHeight="20px"
                 color="grayNew.300"
-                className={isFocused === "lastName" ? "color-active" : ""}
+                className={isFocused === 'lastName' ? 'color-active' : ''}
               >
-                {t("last")}
+                {t('last')}
               </FormLabel>
               <input
                 className="form-input"
                 type="text"
-                {...register("lastName")}
-                onFocus={() => setIsFocused("lastName")}
-                onBlur={() => setIsFocused("")}
+                {...register('lastName')}
+                onFocus={() => setIsFocused('lastName')}
+                onBlur={() => setIsFocused('')}
               />
             </Box>
           </Flex>
           {/*   the second line */}
           <Flex
             flexDirection={{
-              base: "column",
-              lg: "row",
-              xl: "row",
-              "2xl": "row",
+              base: 'column',
+              lg: 'row',
+              xl: 'row',
+              '2xl': 'row',
             }}
             justifyContent="space-between"
-            gap={{ base: "20px", lg: "39px", xl: "39px", "2xl": "39px" }}
-            mb={{ base: "25px", lg: "45px", xl: "45px", "2xl": "45px" }}
+            gap={{ base: '20px', lg: '39px', xl: '39px', '2xl': '39px' }}
+            mb={{ base: '25px', lg: '45px', xl: '45px', '2xl': '45px' }}
           >
             {/*  Email */}
             <Box w="100%">
@@ -97,16 +97,16 @@ export const ContactUsForm = (props: ContactUsFormType) => {
                 fontSize="12px"
                 lineHeight="20px"
                 color="grayNew.300"
-                className={isFocused === "email" ? "color-active" : ""}
+                className={isFocused === 'email' ? 'color-active' : ''}
               >
-                {t("email_name")}
+                {t('email_name')}
               </FormLabel>
               <input
                 className="form-input"
                 type="email"
-                {...register("email")}
-                onFocus={() => setIsFocused("email")}
-                onBlur={() => setIsFocused("")}
+                {...register('email')}
+                onFocus={() => setIsFocused('email')}
+                onBlur={() => setIsFocused('')}
               />
             </Box>
             {/*   Phone Number */}
@@ -116,16 +116,16 @@ export const ContactUsForm = (props: ContactUsFormType) => {
                 fontSize="12px"
                 lineHeight="20px"
                 color="grayNew.300"
-                className={isFocused === "phone" ? "color-active" : ""}
+                className={isFocused === 'phone' ? 'color-active' : ''}
               >
-                {t("phone_name")}
+                {t('phone_name')}
               </FormLabel>
               <input
                 className="form-input"
                 type="text"
-                {...register("phone")}
-                onFocus={() => setIsFocused("phone")}
-                onBlur={() => setIsFocused("")}
+                {...register('phone')}
+                onFocus={() => setIsFocused('phone')}
+                onBlur={() => setIsFocused('')}
               />
             </Box>
           </Flex>
@@ -133,7 +133,7 @@ export const ContactUsForm = (props: ContactUsFormType) => {
           <Flex
             justifyContent="space-between"
             gap="39px"
-            mb={{ base: "28px", lg: "45px", xl: "45px", "2xl": "45px" }}
+            mb={{ base: '28px', lg: '45px', xl: '45px', '2xl': '45px' }}
           >
             {/*      select subject? */}
             <Box w="100%">
@@ -144,23 +144,23 @@ export const ContactUsForm = (props: ContactUsFormType) => {
                   lineHeight="20px"
                   color="black"
                   mb={{
-                    base: "10px",
-                    lg: "14px",
-                    xl: "14px",
-                    "2xl": "14px",
+                    base: '10px',
+                    lg: '14px',
+                    xl: '14px',
+                    '2xl': '14px',
                   }}
                   className={
-                    isFocused === "generalInquiry" ? "color-active" : ""
+                    isFocused === 'generalInquiry' ? 'color-active' : ''
                   }
                 >
-                  {t("subject")}
+                  {t('subject')}
                 </FormLabel>
                 <Flex
                   gap={{
-                    base: "14px",
-                    lg: "20px",
-                    xl: "20px",
-                    "2xl": "20px",
+                    base: '14px',
+                    lg: '20px',
+                    xl: '20px',
+                    '2xl': '20px',
                   }}
                   flexWrap="wrap"
                 >
@@ -177,9 +177,9 @@ export const ContactUsForm = (props: ContactUsFormType) => {
                       className="form-radio"
                       value="1"
                       type="radio"
-                      {...register("generalInquiry")}
+                      {...register('generalInquiry')}
                     />
-                    {t("general")}
+                    {t('general')}
                   </FormLabel>
                   {/*    generalInquiry 2 */}
                   <FormLabel
@@ -194,9 +194,9 @@ export const ContactUsForm = (props: ContactUsFormType) => {
                       className="form-radio"
                       value="2"
                       type="radio"
-                      {...register("generalInquiry")}
+                      {...register('generalInquiry')}
                     />
-                    {t("general")}
+                    {t('general')}
                   </FormLabel>
                   {/*    generalInquiry 3 */}
                   <FormLabel
@@ -211,9 +211,9 @@ export const ContactUsForm = (props: ContactUsFormType) => {
                       className="form-radio"
                       value="32"
                       type="radio"
-                      {...register("generalInquiry")}
+                      {...register('generalInquiry')}
                     />
-                    {t("general")}
+                    {t('general')}
                   </FormLabel>
                   {/*    generalInquiry 4 */}
                   <FormLabel
@@ -228,9 +228,9 @@ export const ContactUsForm = (props: ContactUsFormType) => {
                       className="form-radio"
                       value="32"
                       type="radio"
-                      {...register("generalInquiry")}
+                      {...register('generalInquiry')}
                     />
-                    {t("general")}
+                    {t('general')}
                   </FormLabel>
                 </Flex>
               </Box>
@@ -241,7 +241,7 @@ export const ContactUsForm = (props: ContactUsFormType) => {
           <Flex
             justifyContent="space-between"
             gap="39px"
-            mb={{ base: "25px", lg: "45px", xl: "45px", "2xl": "45px" }}
+            mb={{ base: '25px', lg: '45px', xl: '45px', '2xl': '45px' }}
           >
             {/*  message */}
             <Box w="100%">
@@ -250,17 +250,17 @@ export const ContactUsForm = (props: ContactUsFormType) => {
                 fontSize="12px"
                 lineHeight="20px"
                 color="grayNew.300"
-                className={isFocused === "message" ? "color-active" : ""}
+                className={isFocused === 'message' ? 'color-active' : ''}
               >
-                {t("message")}
+                {t('message')}
               </FormLabel>
               <input
                 placeholder="Write your message.."
                 className="form-input form-input-message"
                 type="text"
-                {...register("message")}
-                onFocus={() => setIsFocused("message")}
-                onBlur={() => setIsFocused("")}
+                {...register('message')}
+                onFocus={() => setIsFocused('message')}
+                onBlur={() => setIsFocused('')}
               />
             </Box>
           </Flex>
@@ -268,31 +268,31 @@ export const ContactUsForm = (props: ContactUsFormType) => {
         {/* button */}
         <Box
           textAlign={{
-            base: "left",
-            lg: "right",
-            xl: "right",
-            "2xl": "right",
+            base: 'left',
+            lg: 'right',
+            xl: 'right',
+            '2xl': 'right',
           }}
         >
           <Button
-            w={{ base: "100%", lg: "214px", xl: "214px", "2xl": "214px" }}
-            h={{ base: "38px", lg: "54px", xl: "54px", "2xl": "54px" }}
+            w={{ base: '100%', lg: '214px', xl: '214px', '2xl': '214px' }}
+            h={{ base: '38px', lg: '54px', xl: '54px', '2xl': '54px' }}
             fontSize={{
-              base: "13px",
-              lg: "16px",
-              xl: "16px",
-              "2xl": "16px",
+              base: '13px',
+              lg: '16px',
+              xl: '16px',
+              '2xl': '16px',
             }}
             lineHeight={{
-              base: "19px",
-              lg: "24px",
-              xl: "24px",
-              "2xl": "24px",
+              base: '19px',
+              lg: '24px',
+              xl: '24px',
+              '2xl': '24px',
             }}
             type="submit"
             variant="black"
           >
-            {t("send_message")}
+            {t('send_message')}
           </Button>
         </Box>
       </form>
