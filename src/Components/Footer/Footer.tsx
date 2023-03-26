@@ -40,7 +40,7 @@ const Footer = () => {
         {/* box footer info */}
         <Flex
           pt="30px"
-          ps="21px"
+          ps={{ base: '', lg: '21px', xl: '21px', '2xl': '21px' }}
           borderTop="1px"
           borderColor="white"
           mt={{ base: '20px', lg: '45px', xl: '45px', '2xl': '45px' }}
